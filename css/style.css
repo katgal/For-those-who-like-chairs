@@ -1,0 +1,190 @@
+/*main container*/
+
+body {
+    font-family: 'ralewayregular', sans-serif;
+}
+.main_width {
+    width: 1050px;
+    /*width: 1200px;*/
+    height: 100%;
+    margin: auto;
+    /*border: 1px solid red;*/
+}
+
+/*header*/
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    font-weight: bold;
+}
+header .main_width {
+    width: 1050px;
+    margin-top: 0;
+    position: relative;
+}
+h1 {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 13px;
+    left: 0;
+}
+ul {
+    position: absolute;
+    right: 0;
+    top: 13px;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+li {
+    color: white;
+    display: inline;
+    padding: 0;
+    margin-left: 20px;
+}
+span {
+    color: rgb(36, 186, 160);
+    /*sekcja pierwsza paragraf*/
+    text-transform: uppercase;
+}
+
+/*section 1, 3 chair + div*/
+
+#section_1 .main_width {
+    height: 510px;
+    position: relative;
+}
+#section_1 {
+    width: 100%;
+    /*#D1D0D8*/
+    height: 510px;
+    background-color: white;
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(227, 227, 227, 1) 86%, rgba(219, 219, 219, 1) 93%, rgba(209, 209, 209, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(86%, rgba(227, 227, 227, 1)), color-stop(93%, rgba(219, 219, 219, 1)), color-stop(100%, rgba(209, 209, 209, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(227, 227, 227, 1) 86%, rgba(219, 219, 219, 1) 93%, rgba(209, 209, 209, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(227, 227, 227, 1) 86%, rgba(219, 219, 219, 1) 93%, rgba(209, 209, 209, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(227, 227, 227, 1) 86%, rgba(219, 219, 219, 1) 93%, rgba(209, 209, 209, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(227, 227, 227, 1) 86%, rgba(219, 219, 219, 1) 93%, rgba(209, 209, 209, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d1d1d1', GradientType=0);
+}
+.photo_chair {
+    position: absolute;
+    /*border: 1px solid blue;*/
+    left: 0;
+    top: 85px;
+}
+.sit_on_paragraph {
+    width: 500px;
+    height: 338px;
+    /*border: 1px solid green;*/
+    position: relative;
+    right: -450px;
+    top: 85px;
+    display: inline-block;
+}
+.sit_on_paragraph h1:first-child {
+    font-size: 35px;
+    color: black;
+    margin: 10px;
+    position: absolute;
+    text-align: center;
+    left: 75px;
+    top: 30px;
+}
+.sit_on_paragraph p:first-of-type {
+    font-size: 16px;
+    padding: 10px;
+    position: absolute;
+    bottom: 90px;
+    margin: 30px;
+    text-align: center;
+    line-height: 25px;
+}
+#przycisk_1 {
+    border-radius: 10px;
+    background-color: rgb(36, 186, 160);
+    height: 50px;
+    width: 277px;
+    position: absolute;
+    left: 110px;
+    bottom: 30px;
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+.smaller_1 {
+    width: 50px;
+    height: 50px;
+    font-size: 60px;
+    color: rgb(36, 186, 160);
+    text-align: center;
+    padding-bottom: 10px;
+    /*border: 1px solid red;*/
+    position: absolute;
+    right: 0;
+    bottom: 230px;
+}
+.smaller_2 {
+    width: 50px;
+    height: 50px;
+    font-size: 60px;
+    color: rgb(36, 186, 160);
+    text-align: center;
+    padding-bottom: 10px;
+    /*border: 1px solid red;*/
+    position: absolute;
+    bottom: 230px;
+    left: 0;
+}
+
+/*section 2, 2 images + article*/
+
+#section_2 {
+    height: 350px;
+    background-color: white;
+}
+#section_2 .main_width {
+    height: 350px;
+    position: relative;
+    /*padding-top: 25px;*/
+}
+#finds_all_inputs {
+    height: 250px;
+    width: 330px;
+    /*border: 1px solid green;*/
+    float: right;
+    margin-top: 30px;
+    /*padding: 10px 5px 10px 5px;*/
+}
+
+#section_2 .main_width img:first-child{
+  float: left;
+}
+
+#section_2 .main_width img:nth-child(2){
+  float:left;
+  margin-left: 30px;
+}
+
+.kwadraty{
+  padding-top: 30px;
+}
+
+h3{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#ble {
+  line-height: 20px;
+}
+
+#e{
+  line-height: 20px;
+}
