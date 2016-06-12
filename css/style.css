@@ -33,7 +33,7 @@ h1 {
     top: 13px;
     left: 0;
 }
-ul {
+#menulist {
     position: absolute;
     right: 0;
     top: 13px;
@@ -41,7 +41,7 @@ ul {
     text-transform: uppercase;
     font-size: 18px;
 }
-li {
+#menulist li {
     color: white;
     display: inline;
     padding: 0;
@@ -53,7 +53,7 @@ span {
     text-transform: uppercase;
 }
 
-/*section 1, 3 carousel*/
+/*section 1, carousel*/
 
 #section_1_carousel .main_width {
     height: 510px;
@@ -162,67 +162,57 @@ span {
     margin-top: 30px;
 }
 #section_2 .main_width img:first-child {
-
     float: left;
     margin-right: 30px;
-
 }
 #section_2 .main_width img:nth-child(2) {
-
     float: left;
     margin-left: 30px;
 }
 .chairs_images {
     padding-top: 30px;
 }
-
-#clair_div{
-  height: 64px;
-  width: 330px;
-  background-color: rgba(255,255,255, .5);
-  position: absolute;
-  top: 175px;
+#clair_div {
+    height: 64px;
+    width: 330px;
+    background-color: rgba(255, 255, 255, .5);
+    position: absolute;
+    top: 175px;
 }
-#clair_div p{
-  margin-top: 15px;
-margin-left: 17px;
-font-weight: bold;
+#clair_div p {
+    margin-top: 15px;
+    margin-left: 17px;
+    font-weight: bold;
 }
-
 #div_green_1 {
     height: 7px;
     width: 137px;
     background-color: rgb(36, 186, 160);
     position: absolute;
     top: 210px;
-left: 13px;
-  }
-
-  #margarita_div{
+    left: 13px;
+}
+#margarita_div {
     height: 64px;
     width: 330px;
-    background-color: rgba(255,255,255, .5);
+    background-color: rgba(255, 255, 255, .5);
     position: absolute;
     top: 175px;
     left: 359px;
-  }
-
-  #div_green_2 {
-      height: 7px;
-      width: 137px;
-      background-color: rgb(36, 186, 160);
-      position: absolute;
-      top: 210px;
-
-  left: 373px;
-    }
-
-    #margarita_div p{
-      margin-top: 15px;
+}
+#div_green_2 {
+    height: 7px;
+    width: 137px;
+    background-color: rgb(36, 186, 160);
+    position: absolute;
+    top: 210px;
+    left: 373px;
+}
+#margarita_div p {
+    margin-top: 15px;
     margin-left: 17px;
     font-weight: bold;
-    }
-
+}
 #text_in_third_div {
     margin: 21px;
     font-size: 14px;
@@ -247,9 +237,139 @@ h3 {
 #all_inputs_second_p {
     line-height: 20px;
 }
+
 /*section 3, price list*/
 
-#section_3 .main_width{
-  height: 725px;
-background-color: rgb(241,241,241);
+#section_3 {
+    width: 100%;
+    height: 725px;
+    background-color: rgb(241, 241, 241);
 }
+#cennik {
+    position: relative;
+    margin: 47px auto;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    font-weight: bold;
+}
+#div_green_3 {
+    height: 7px;
+    width: 317px;
+    background-color: rgb(36, 186, 160);
+    position: absolute;
+    top: 27px;
+}
+
+/*section 3, basic plan*/
+
+.plans {
+    height: 500px;
+    width: 330px;
+    background-color: rgb(249, 249, 249);
+    border: 2px solid rgb(214, 213, 213);
+    box-sizing: border-box;
+    position: relative;
+    bottom: -40px;
+    text-align: center;
+    padding-top: 32px;
+    display: inline-block;
+    border-radius: 3px;
+}
+.circle_dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: rgb(194, 194, 194);
+    border: 14px solid white;
+    box-shadow: 0px 0 0 2px rgb(214, 213, 213);
+    position: absolute;
+    top: -35px;
+    left: 135px;
+}
+.prices> p {
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+}
+.price_circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid rgb(214, 213, 213);
+    color: rgb(194, 194, 194);
+    font-weight: bold;
+    position: absolute;
+    top: 82px;
+    left: 96px;
+}
+.price_circle p:first-child {
+    font-size: 51px;
+    margin-top: 23px;
+}
+.price_circle p:nth-child(2) {
+    font-size: 15px;
+    margin-top: 10px;
+}
+sup {
+    font-size: 12px;
+    vertical-align: top;
+}
+.plans ul:first-of-type {
+    position: absolute;
+    font-size: 23px;
+    width: 100%;
+    top: 245px;
+}
+.plans li:nth-child(odd) {
+    color: rgb(147, 147, 147);
+    background-color: rgb(228, 228, 228);
+    line-height: 44px;
+}
+.plans li:nth-child(even) {
+    color: rgb(120, 120, 120);
+    background-color: rgb(241, 241, 241);
+    line-height: 44px;
+}
+.button_2 {
+    width: 125px;
+    height: 35px;
+    background-color: rgb(36, 186, 160);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 18px;
+    left: 100px;
+}
+/*middle plan - standard plan*/
+.diffrent {
+    margin: 0 25px 0 26px;
+    background-color: rgb(36, 186, 160);
+    border: 2px solid rgb(36, 186, 160);
+    border-radius: 3px;
+}
+.diffrent .circle_dot {
+    background-color: white;
+    border: 14px solid rgb(36, 186, 160);
+    box-shadow: none;
+}
+.diffrent span {
+    color: white;
+}
+.diffrent .price_circle {
+    color: rgb(36, 186, 160);
+    border: none;
+}
+.diffrent li:nth-child(odd) {
+    background-color: white;
+}
+.diffrent li:nth-child(even) {
+    color: rgb(158, 158, 158);
+}
+.diffrent input {
+    background-color: white;
+    color: rgb(36, 186, 160);
+}
+/*section 4, contact*/
