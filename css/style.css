@@ -8,10 +8,10 @@ body {
     /*width: 1200px;*/
     height: 100%;
     margin: auto;
-    /*border: 1px solid red;*/
+    border: 1px solid red;
 }
 
-/*header*/
+/*header, menu*/
 
 header {
     width: 100%;
@@ -53,13 +53,13 @@ span {
     text-transform: uppercase;
 }
 
-/*section 1, 3 chair + div*/
+/*section 1, 3 carousel*/
 
-#section_1 .main_width {
+#section_1_carousel .main_width {
     height: 510px;
     position: relative;
 }
-#section_1 {
+#section_1_carousel {
     width: 100%;
     /*#D1D0D8*/
     height: 510px;
@@ -106,7 +106,7 @@ span {
     text-align: center;
     line-height: 25px;
 }
-#przycisk_1 {
+#button_1 {
     border-radius: 10px;
     background-color: rgb(36, 186, 160);
     height: 50px;
@@ -143,7 +143,7 @@ span {
     left: 0;
 }
 
-/*section 2, 2 images + article*/
+/*section 2, 2 pics + article*/
 
 #section_2 {
     height: 350px;
@@ -157,34 +157,99 @@ span {
 #finds_all_inputs {
     height: 250px;
     width: 330px;
-    /*border: 1px solid green;*/
+    border: 1px solid rgba(0, 0, 0, 0.2);
     float: right;
     margin-top: 30px;
-    /*padding: 10px 5px 10px 5px;*/
+}
+#section_2 .main_width img:first-child {
+
+    float: left;
+    margin-right: 30px;
+
+}
+#section_2 .main_width img:nth-child(2) {
+
+    float: left;
+    margin-left: 30px;
+}
+.chairs_images {
+    padding-top: 30px;
 }
 
-#section_2 .main_width img:first-child{
-  float: left;
+#clair_div{
+  height: 64px;
+  width: 330px;
+  background-color: rgba(255,255,255, .5);
+  position: absolute;
+  top: 175px;
+}
+#clair_div p{
+  margin-top: 15px;
+margin-left: 17px;
+font-weight: bold;
 }
 
-#section_2 .main_width img:nth-child(2){
-  float:left;
-  margin-left: 30px;
-}
+#div_green_1 {
+    height: 7px;
+    width: 137px;
+    background-color: rgb(36, 186, 160);
+    position: absolute;
+    top: 210px;
+left: 13px;
+  }
 
-.kwadraty{
-  padding-top: 30px;
-}
+  #margarita_div{
+    height: 64px;
+    width: 330px;
+    background-color: rgba(255,255,255, .5);
+    position: absolute;
+    top: 175px;
+    left: 359px;
+  }
 
-h3{
-  font-weight: bold;
-  margin-bottom: 20px;
-}
+  #div_green_2 {
+      height: 7px;
+      width: 137px;
+      background-color: rgb(36, 186, 160);
+      position: absolute;
+      top: 210px;
 
-#ble {
-  line-height: 20px;
-}
+  left: 373px;
+    }
 
-#e{
-  line-height: 20px;
+    #margarita_div p{
+      margin-top: 15px;
+    margin-left: 17px;
+    font-weight: bold;
+    }
+
+#text_in_third_div {
+    margin: 21px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+#div_green {
+    height: 7px;
+    width: 137px;
+    background-color: rgb(36, 186, 160);
+    position: absolute;
+    top: 17px;
+}
+h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+}
+#all_inputs_first_p {
+    line-height: 20px;
+}
+#all_inputs_second_p {
+    line-height: 20px;
+}
+/*section 3, price list*/
+
+#section_3 .main_width{
+  height: 725px;
+background-color: rgb(241,241,241);
 }
