@@ -453,9 +453,36 @@ textarea {
     margin-top: 44px;
     margin-left: 2px;
 }
+
 /*footer, logo*/
+
 footer {
     width: 100%;
     height: 90px;
     background-color: white;
+}
+footer .main_width {
+    box-sizing: border-box;
+    /*padding-top: 30px;*/
+    letter-spacing: 1px;
+}
+footer p:first-of-type {
+    color: rgb(158, 158, 158);
+    float: left;
+    padding-top: 30px;
+}
+.logos {
+    float: right;
+    margin-top: 15px;
+}
+footer p:last-of-type {
+    float: right;
+    color: rgb(155, 155, 155);
+    font-size: 18px;
+    margin-left: 70px;
+    padding-top: 30px;
+}
+footer span:first-of-type {
+    color: rgb(155, 155, 155);
+    font-weight: bold;
 }
