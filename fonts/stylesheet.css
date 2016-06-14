@@ -11,11 +11,32 @@
 
 
 
-
 @font-face {
     font-family: 'ralewayregular';
     src: url('../fonts/raleway-regular.woff2') format('woff2'),
          url('../fonts/raleway-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light.woff2') format('woff2'),
+         url('../fonts/raleway-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../fonts/raleway-medium.woff2') format('woff2'),
+         url('../fonts/raleway-medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

@@ -1,14 +1,25 @@
+body {
+    /*font-family: 'ralewayregular', Arial, sans-serif;*/
+    font-family: 'ralewaymedium', Arial, sans-serif;
+}
+
 /*main container*/
 
-body {
-    font-family: 'ralewayregular', sans-serif;
-}
 .main_width {
     width: 1050px;
     /*width: 1200px;*/
     height: 100%;
     margin: auto;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
+}
+.regularFont {
+    font-family: 'ralewayregular', Arial, sans-serif;
+}
+.lightFont {
+    font-family: 'ralewaylight', Arial, sans-serif;
+}
+.boldFont {
+    font-family: 'ralewaybold', Arial, sans-serif;
 }
 
 /*header, menu*/
@@ -26,8 +37,8 @@ header .main_width {
 }
 h1 {
     color: white;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px;
+    /*font-weight: bold;*/
     text-transform: uppercase;
     position: absolute;
     top: 13px;
@@ -39,18 +50,20 @@ h1 {
     top: 13px;
     list-style-type: none;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 16px;
 }
 #menulist li {
     color: white;
     display: inline;
     padding: 0;
-    margin-left: 20px;
+    margin-left: 25px;
+    letter-spacing: 1px;
 }
 span {
     color: rgb(36, 186, 160);
     /*sekcja pierwsza paragraf*/
     text-transform: uppercase;
+    font-family: 'ralewaybold', Arial, sans-serif;
 }
 
 /*section 1, carousel*/
@@ -119,18 +132,14 @@ span {
     color: white;
 }
 .smaller_1 {
-    width: 50px;
-    height: 50px;
-    font-size: 60px;
-    color: rgb(36, 186, 160);
-    text-align: center;
-    padding-bottom: 10px;
-    /*border: 1px solid red;*/
     position: absolute;
     right: 0;
-    bottom: 230px;
 }
 .smaller_2 {
+    position: absolute;
+    left: 0;
+}
+.tag {
     width: 50px;
     height: 50px;
     font-size: 60px;
@@ -138,9 +147,7 @@ span {
     text-align: center;
     padding-bottom: 10px;
     /*border: 1px solid red;*/
-    position: absolute;
     bottom: 230px;
-    left: 0;
 }
 
 /*section 2, 2 pics + article*/
@@ -179,15 +186,7 @@ span {
     position: absolute;
     top: 175px;
 }
-#clair_div p {
-    margin-top: 15px;
-    margin-left: 17px;
-    font-weight: bold;
-}
 #div_green_1 {
-    height: 7px;
-    width: 137px;
-    background-color: rgb(36, 186, 160);
     position: absolute;
     top: 210px;
     left: 13px;
@@ -201,16 +200,13 @@ span {
     left: 359px;
 }
 #div_green_2 {
-    height: 7px;
-    width: 137px;
-    background-color: rgb(36, 186, 160);
     position: absolute;
     top: 210px;
     left: 373px;
 }
-#margarita_div p {
+#margarita_div p, #clair_div p {
     margin-top: 15px;
-    margin-left: 17px;
+    margin-left: 14px;
     font-weight: bold;
 }
 #text_in_third_div {
@@ -220,11 +216,13 @@ span {
     position: relative;
 }
 #div_green {
-    height: 7px;
-    width: 137px;
-    background-color: rgb(36, 186, 160);
     position: absolute;
     top: 17px;
+}
+.greenDiV {
+    height: 7px;
+    width: 140px;
+    background-color: rgb(36, 186, 160);
 }
 h3 {
     font-weight: bold;
@@ -245,9 +243,12 @@ h3 {
     height: 725px;
     background-color: rgb(241, 241, 241);
 }
+#section_3 .main_width {
+    padding-top: 47px;
+}
 .cennik {
     position: relative;
-    margin: 47px auto;
+    margin-bottom: 47px;
     color: rgba(0, 0, 0, 0.6);
     font-size: 20px;
     font-weight: bold;
@@ -286,9 +287,10 @@ h3 {
     top: -35px;
     left: 135px;
 }
-.prices> p {
+.prices> p span {
     font-size: 25px;
     font-family: Arial, sans-serif;
+    /*font-weight: bold;*/
 }
 .price_circle {
     width: 130px;
@@ -383,7 +385,9 @@ sup {
     background-color: white;
 }
 #section_4 .main_width {
+    box-sizing: border-box;
     position: relative;
+    padding-top: 47px;
 }
 form input {
     height: 65px;
@@ -394,7 +398,6 @@ form input {
     border: 1px solid rgba(36, 186, 160, .5);
     padding: 15px;
     font-size: 31px;
-    font-family: 'ralewayregular', sans-serif;
     color: rgb(194, 194, 194);
     border-radius: 1px;
     margin-bottom: 15px;
@@ -447,9 +450,7 @@ textarea {
     border: none;
     color: white;
     border-radius: 8px;
-    font-family: 'ralewayregular', sans-serif;
     font-size: 33px;
-    font-weight: bold;
     margin-top: 44px;
     margin-left: 2px;
 }
