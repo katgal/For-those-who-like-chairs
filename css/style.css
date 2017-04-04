@@ -120,6 +120,7 @@ h1 {
 
 #menulist span {
     color: white;
+    /*font-weight: normal*/
 }
 
 span {
@@ -152,17 +153,37 @@ span {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d1d1d1', GradientType=0);
 }
 
-.photo_chair {
+.slider {
     position: absolute;
-    /*border: 1px solid blue;*/
     left: 0;
     top: 85px;
+    width: 470px;
+    height: 337px;
+    overflow: hidden;
+}
+
+.slider ul {
+    width: 1450px;
+}
+
+.slider ul li {
+    width: 470px;
+    height: 337px;
+    display: inline-block;
+}
+
+.photo_chair {
+    width: 100%;
+}
+
+.slider .orange {
+    width: 80%;
+    margin: 10%;
 }
 
 .sit_on_paragraph {
     width: 500px;
     height: 338px;
-    /*border: 1px solid green;*/
     position: relative;
     right: -450px;
     top: 85px;
