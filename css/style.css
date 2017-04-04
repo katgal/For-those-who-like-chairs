@@ -3,6 +3,7 @@ body {
     font-family: 'ralewaymedium', Arial, sans-serif;
 }
 
+
 /*main container*/
 
 .main_width {
@@ -12,15 +13,19 @@ body {
     margin: auto;
     /*border: 1px solid red;*/
 }
+
 .regularFont {
     font-family: 'ralewayregular', Arial, sans-serif;
 }
+
 .lightFont {
     font-family: 'ralewaylight', Arial, sans-serif;
 }
+
 .boldFont {
     font-family: 'ralewaybold', Arial, sans-serif;
 }
+
 
 /*header, menu*/
 
@@ -30,11 +35,13 @@ header {
     background-color: black;
     font-weight: bold;
 }
+
 header .main_width {
     width: 1050px;
     margin-top: 0;
     position: relative;
 }
+
 h1 {
     color: white;
     font-size: 16px;
@@ -44,6 +51,7 @@ h1 {
     top: 13px;
     left: 0;
 }
+
 #menulist {
     position: absolute;
     right: 0;
@@ -52,13 +60,68 @@ h1 {
     text-transform: uppercase;
     font-size: 16px;
 }
+
 #menulist li {
     color: white;
     display: inline;
     padding: 0;
     margin-left: 25px;
     letter-spacing: 1px;
+    cursor: pointer;
+    height: 40px;
 }
+
+#menulist li:first-child {
+    position: relative;
+    display: inline-block;
+}
+
+
+/*show dropdown menu on hover*/
+
+#menulist li:first-child:hover .sub_menu {
+    display: block;
+}
+
+
+/*submenu*/
+
+#menulist .sub_menu {
+    position: absolute;
+    display: none;
+    z-index: 10;
+    top: 50px;
+    background: black;
+    padding: 5px 0;
+}
+
+#menulist .sub_menu::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 13px solid black;
+    top: -13px;
+    right: 88px;
+    ;
+}
+
+#menulist .sub_menu li {
+    display: block;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: initial;
+    margin-right: 25px;
+    padding: 8px 0;
+    height: 15px;
+}
+
+#menulist span {
+    color: white;
+}
+
 span {
     color: rgb(36, 186, 160);
     /*sekcja pierwsza paragraf*/
@@ -66,12 +129,14 @@ span {
     font-family: 'ralewaybold', Arial, sans-serif;
 }
 
+
 /*section 1, carousel*/
 
 #section_1_carousel .main_width {
     height: 510px;
     position: relative;
 }
+
 #section_1_carousel {
     width: 100%;
     /*#D1D0D8*/
@@ -86,12 +151,14 @@ span {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(227, 227, 227, 1) 86%, rgba(219, 219, 219, 1) 93%, rgba(209, 209, 209, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d1d1d1', GradientType=0);
 }
+
 .photo_chair {
     position: absolute;
     /*border: 1px solid blue;*/
     left: 0;
     top: 85px;
 }
+
 .sit_on_paragraph {
     width: 500px;
     height: 338px;
@@ -101,6 +168,7 @@ span {
     top: 85px;
     display: inline-block;
 }
+
 .sit_on_paragraph h1:first-child {
     font-size: 35px;
     color: black;
@@ -110,6 +178,7 @@ span {
     left: 75px;
     top: 30px;
 }
+
 .sit_on_paragraph p:first-of-type {
     font-size: 16px;
     padding: 10px;
@@ -119,6 +188,7 @@ span {
     text-align: center;
     line-height: 25px;
 }
+
 #button_1 {
     border-radius: 10px;
     background-color: rgb(36, 186, 160);
@@ -130,15 +200,19 @@ span {
     border: none;
     font-size: 20px;
     color: white;
+    cursor: pointer;
 }
+
 .smaller_1 {
     position: absolute;
     right: 0;
 }
+
 .smaller_2 {
     position: absolute;
     left: 0;
 }
+
 .tag {
     width: 50px;
     height: 50px;
@@ -148,7 +222,9 @@ span {
     padding-bottom: 10px;
     /*border: 1px solid red;*/
     bottom: 230px;
+    cursor: pointer;
 }
+
 
 /*section 2, 2 pics + article*/
 
@@ -156,11 +232,13 @@ span {
     height: 350px;
     background-color: white;
 }
+
 #section_2 .main_width {
     height: 350px;
     position: relative;
     /*padding-top: 25px;*/
 }
+
 #finds_all_inputs {
     height: 250px;
     width: 330px;
@@ -168,17 +246,22 @@ span {
     float: right;
     margin-top: 30px;
 }
+
 #section_2 .main_width img:first-child {
     float: left;
     margin-right: 30px;
+    cursor: pointer;
 }
+
 #section_2 .main_width img:nth-child(2) {
     float: left;
     margin-left: 30px;
 }
+
 .chairs_images {
     padding-top: 30px;
 }
+
 #clair_div {
     height: 64px;
     width: 330px;
@@ -186,11 +269,13 @@ span {
     position: absolute;
     top: 175px;
 }
+
 #div_green_1 {
     position: absolute;
     top: 210px;
     left: 13px;
 }
+
 #margarita_div {
     height: 64px;
     width: 330px;
@@ -199,42 +284,58 @@ span {
     top: 175px;
     left: 359px;
 }
+
 #div_green_2 {
     position: absolute;
     top: 210px;
     left: 373px;
 }
+
 #margarita_div p, #clair_div p {
     margin-top: 15px;
     margin-left: 14px;
     font-weight: bold;
 }
+
 #text_in_third_div {
     margin: 21px;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.6);
     position: relative;
 }
+
 #div_green {
     position: absolute;
     top: 17px;
 }
+
 .greenDiV {
     height: 7px;
     width: 140px;
     background-color: rgb(36, 186, 160);
 }
+
+
+/*hide img content*/
+
+.img_wrapper:hover .hide {
+    display: none;
+}
+
 h3 {
     font-weight: bold;
     margin-bottom: 20px;
     color: black;
 }
+
 #all_inputs_first_p {
     line-height: 20px;
 }
+
 #all_inputs_second_p {
     line-height: 20px;
 }
+
 
 /*section 3, price list*/
 
@@ -243,9 +344,11 @@ h3 {
     height: 725px;
     background-color: rgb(241, 241, 241);
 }
+
 #section_3 .main_width {
     padding-top: 47px;
 }
+
 .cennik {
     position: relative;
     margin-bottom: 47px;
@@ -253,6 +356,7 @@ h3 {
     font-size: 20px;
     font-weight: bold;
 }
+
 #div_green_3 {
     height: 7px;
     width: 317px;
@@ -260,6 +364,7 @@ h3 {
     position: absolute;
     top: 27px;
 }
+
 
 /*section 3, basic plan*/
 
@@ -276,6 +381,7 @@ h3 {
     display: inline-block;
     border-radius: 3px;
 }
+
 .circle_dot {
     width: 25px;
     height: 25px;
@@ -287,11 +393,13 @@ h3 {
     top: -35px;
     left: 135px;
 }
-.prices> p span {
+
+.prices>p span {
     font-size: 25px;
     font-family: Arial, sans-serif;
     /*font-weight: bold;*/
 }
+
 .price_circle {
     width: 130px;
     height: 130px;
@@ -304,34 +412,41 @@ h3 {
     top: 82px;
     left: 96px;
 }
+
 .price_circle p:first-child {
     font-size: 51px;
     margin-top: 23px;
 }
+
 .price_circle p:nth-child(2) {
     font-size: 15px;
     margin-top: 10px;
 }
+
 sup {
     font-size: 12px;
     vertical-align: top;
 }
+
 .plans ul:first-of-type {
     position: absolute;
     font-size: 23px;
     width: 100%;
     top: 245px;
 }
+
 .plans li:nth-child(odd) {
     color: rgb(147, 147, 147);
     background-color: rgb(228, 228, 228);
     line-height: 44px;
 }
+
 .plans li:nth-child(even) {
     color: rgb(120, 120, 120);
     background-color: rgb(241, 241, 241);
     line-height: 44px;
 }
+
 .button_2 {
     width: 125px;
     height: 35px;
@@ -344,7 +459,9 @@ sup {
     position: absolute;
     bottom: 18px;
     left: 100px;
+    cursor: pointer;
 }
+
 
 /*middle plan - standard plan*/
 
@@ -354,28 +471,35 @@ sup {
     border: 2px solid rgb(36, 186, 160);
     border-radius: 3px;
 }
+
 .diffrent .circle_dot {
     background-color: white;
     border: 14px solid rgb(36, 186, 160);
     box-shadow: none;
 }
+
 .diffrent span {
     color: white;
 }
+
 .diffrent .price_circle {
     color: rgb(36, 186, 160);
     border: none;
 }
+
 .diffrent li:nth-child(odd) {
     background-color: white;
 }
+
 .diffrent li:nth-child(even) {
     color: rgb(158, 158, 158);
 }
+
 .diffrent input {
     background-color: white;
     color: rgb(36, 186, 160);
 }
+
 
 /*section 4, contact*/
 
@@ -384,15 +508,18 @@ sup {
     height: 560px;
     background-color: white;
 }
+
 #section_4 .main_width {
     box-sizing: border-box;
     position: relative;
     padding-top: 47px;
 }
+
 form input {
     height: 65px;
     width: 630px;
 }
+
 .formIn {
     box-sizing: border-box;
     border: 1px solid rgba(36, 186, 160, .5);
@@ -403,11 +530,13 @@ form input {
     margin-bottom: 15px;
     margin-top: 10px;
 }
+
 textarea {
     height: 185px;
     width: 630px;
     resize: none;
 }
+
 
 /*red_chair and agreement/send*/
 
@@ -421,9 +550,11 @@ textarea {
     right: 0px;
     padding: 0px 10px 5px 10px;
 }
+
 .red_chair_wrapper>img {
     margin-left: 40px;
 }
+
 .red_chair_wrapper div:first-of-type {
     height: 52px;
     width: 52px;
@@ -434,15 +565,18 @@ textarea {
     float: left;
     margin-right: 15px;
 }
+
 .red_chair_wrapper p:first-of-type {
     color: rgb(194, 194, 194);
     line-height: 22px;
     font-size: 19px;
     margin-top: 6px;
 }
+
 .clearfix {
     clear: both;
 }
+
 .button_3 {
     height: 68px;
     width: 340px;
@@ -453,7 +587,9 @@ textarea {
     font-size: 33px;
     margin-top: 44px;
     margin-left: 2px;
+    cursor: pointer;
 }
+
 
 /*footer, logo*/
 
@@ -462,20 +598,24 @@ footer {
     height: 90px;
     background-color: white;
 }
+
 footer .main_width {
     box-sizing: border-box;
     /*padding-top: 30px;*/
     letter-spacing: 1px;
 }
+
 footer p:first-of-type {
     color: rgb(158, 158, 158);
     float: left;
     padding-top: 30px;
 }
+
 .logos {
     float: right;
     margin-top: 15px;
 }
+
 footer p:last-of-type {
     float: right;
     color: rgb(155, 155, 155);
@@ -483,6 +623,7 @@ footer p:last-of-type {
     margin-left: 70px;
     padding-top: 30px;
 }
+
 footer span:first-of-type {
     color: rgb(155, 155, 155);
     font-weight: bold;
