@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <!-- header, menu -->
+    <!-- *******************header, menu********************* -->
     <header>
         <nav class="main_width">
             <h1 class="regularFont">Sit <span>on</span> chair</h1>
@@ -27,7 +27,7 @@
             </ul>
         </nav>
     </header>
-    <!-- section 1, carousel -->
+    <!-- *****************section 1, carousel**************** -->
     <section id="section_1_carousel">
         <div class="main_width">
             <div class="slider">
@@ -54,7 +54,7 @@
             </div>
         </div class="main_width">
     </section>
-    <!-- section 2, 2 pics + article -->
+    <!-- **************section 2, 2 pics + article************** -->
     <section id="section_2">
         <div class="main_width">
 
@@ -90,10 +90,10 @@
 
         </div>
     </section>
-    <!-- section 3, price list -->
+    <!-- *******************section 3, price list*********************** -->
     <section id="section_3">
         <div class="main_width">
-            <div class="cennik">
+            <div class="green_line">
                 <p>CENNIK</p>
                 <div id="div_green_3"></div>
             </div>
@@ -150,44 +150,161 @@
              </div>
             </div>
         </section>
-        <!-- section 4, contact -->
-        <section id="section_4">
-          <div class="main_width">
-          <div class="cennik">
-              <p>KONTAKT</p>
-              <div id="div_green_3"></div>
-          </div>
-          <!-- form -->
-          <form>
-           <input class="formIn lightFont"  type="text" name="name" placeholder="Imię"><br>
-           <input class="formIn lightFont"  type="emial" name="email" placeholder="email"><br>
-           <textarea class="formIn lightFont"  type="text" name="message" placeholder="Wiadomość"></textarea>
-          </form>
-         <!-- red_chair and agreement/send -->
-          <div class="red_chair_wrapper">
-               <img src="images/red_chair.png"/>
 
-               <div><img src="images/form_ok.jpg" /></div>
-               <p>Zgadzam się na przetwarzanie danych osobowych</p>
-               <div class="clearfix"></div>
-               <input class="button_3 boldFont" type="submit" name="button_3" value="WYŚLIJ">
-          </div>
-         </div>
-        </section>
-        <!-- footer, logo -->
-        <footer>
+        <!-- ******************section make your own chair******************** -->
+        <section id="makeChair">
           <div class="main_width">
-          <p>Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
-          <p>SIT <span>ON</span> CHAIR</p>
-                    <div class="logos">
-                        <img src="images/flickr.png" />
-                        <img src="images/vimeo.png" />
-                        <img src="images/pinterest.png" />
-                        <img src="images/twitter.png" />
-                    </div>
+
+              <div class="green_line left">
+                  <p>SKOMPONUJ SWOJE KRZESŁO</p>
+                  <div id="div_green_3"></div>
+              </div>
+
+              <div class="green_line right">
+                  <p>PODSUMOWANIE</p>
+                  <div id="div_green_3"></div>
+              </div>
+
+               <div class="form">
+                   <!-- select chair parts -->
+                   <!-- select chair -->
+                   <div class="section_wrapper inputs">
+
+                   <div class="list_wrapper">
+                   <div class="dropdown_list">
+                       <span class="list_label regularFont">Wybierz rodzaj</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_content">
+                            <li data-name-price="120">
+                                Clair
+                            </li>
+                            <li data-name-price="430">
+                                Margarita
+                            </li>
+                            <li data-name-price="350">
+                                Selena
+                            </li>
+                        </ul>
                 </div>
-                </footer>
-                <script type="text/javascript" src="js/app.js"></script>
+            </div>
+            <!-- select color -->
+            <div class="list_wrapper">
+                <div class="dropdown_list">
+                    <span class="list_label regularFont">Wybierz kolor</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_content">
+                        <li data-color-price="200">
+                            Czerwony
+                        </li>
+                        <li data-color-price="130">
+                            Czarny
+                        </li>
+                        <li data-color-price="80">
+                            Pomarańczowy
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- select material -->
+            <div class="list_wrapper">
+                <div class="dropdown_list">
+                    <span class="list_label regularFont">Wybierz materiał</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_content">
+                        <li data-material-price="330">
+                            Tkanina
+                        </li>
+                        <li data-material-price="520">
+                            Skóra
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="check_box"><img src="images/form_ok.jpg" /></div>
+            <div class="transport_label">
+                Transport
+            </div>
+        </div>
+
+        <!-- section with chair image -->
+        <div class="section_wrapper middle">
+            <img src="images/orange_chair.png" />
+        </div>
+        <!-- order section -->
+        <div class="section_wrapper order">
+            <div class="left_panel">
+                <p class="chair_name boldFont">
+                    Twój fotel
+                </p>
+                <p class="chair_color">czerwony</p>
+                <p class="chair_material">tkanina</p>
+                <p class="chair_transport">transport</p>
+            </div>
+
+            <div class="right_panel">
+                <p class="chair_name_value boldFont">220</p>
+                <p class="chair_color_value">90</p>
+                <p class="chair_material_value">120</p>
+                <p class="chair_transport_value">200</p>
+            </div>
+
+            <div class="sum_label">
+                <p>
+                    SUMA
+                </p>
+            </div>
+
+            <div class="sum boldFont">
+                <p>
+                    630
+                </p>
+            </div>
+            <input class="send_order" type="submit" value="ZAMAWIAM" />
+        </div>
+
+        </div>
+        </div>
+    </section>
+    <!-- ***********************section 4, contact************************ -->
+    <section id="section_4">
+        <div class="main_width">
+            <div class="green_line">
+                <p>KONTAKT</p>
+                <div id="div_green_3"></div>
+            </div>
+            <!-- form -->
+            <form>
+                <input class="formIn lightFont" type="text" name="name" placeholder="Imię"><br>
+                <input class="formIn lightFont" type="emial" name="email" placeholder="email"><br>
+                <textarea class="formIn lightFont" type="text" name="message" placeholder="Wiadomość"></textarea>
+                <!-- </form> -->
+                <!-- red_chair and agreement/send -->
+                <div class="red_chair_wrapper">
+                    <img src="images/red_chair.png" />
+
+                    <div><img src="images/form_ok.jpg" /></div>
+                    <p>Zgadzam się na przetwarzanie danych osobowych</p>
+                    <div class="clearfix"></div>
+                    <input class="button_3 boldFont" type="submit" name="button_3" value="WYŚLIJ">
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- ******************footer, logo*********************** -->
+    <footer>
+        <div class="main_width">
+            <p>Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
+            <p>SIT <span>ON</span> CHAIR</p>
+            <div class="logos">
+                <a href="#flickr" target="_blank"><img src="images/flickr.png" /></a>
+                <a href="#vimeo" target="_blank"><img src="images/vimeo.png" /></a>
+                <a href="#pinterest" target="_blank"><img src="images/pinterest.png" /></a>
+                <a href="#twitter" target="_blank"><img src="images/twitter.png" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>

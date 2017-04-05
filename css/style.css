@@ -370,7 +370,7 @@ h3 {
     padding-top: 47px;
 }
 
-.cennik {
+.green_line {
     position: relative;
     margin-bottom: 47px;
     color: rgba(0, 0, 0, 0.6);
@@ -521,6 +521,201 @@ sup {
     color: rgb(36, 186, 160);
 }
 
+.plans:hover {
+    box-shadow: 0px 0px 20px black;
+}
+
+
+/*section makeChair*/
+
+#makeChair {
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    background-color: rgb(249, 249, 249);
+    padding: 47px 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.right p {
+    width: 317px;
+    text-align: right;
+}
+
+.form {
+    clear: both;
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown_list {
+    width: 320px;
+    height: 50px;
+    border: 1px solid rgb(36, 186, 160);
+    background-color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.dropdown_list .list_label {
+    font-size: 30px;
+    text-transform: initial;
+    color: rgb(214, 213, 213);
+}
+
+.dropdown_list .list_arrow {
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 16px solid rgb(36, 186, 160);
+    top: 16px;
+    right: 20px;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.dropdown_list .list_content {
+    width: 320px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 48px;
+    border: 1px solid rgb(214, 213, 213);
+    left: -1px;
+    z-index: 10;
+    cursor: pointer;
+    display: none;
+}
+
+.list_content li {
+    padding: 10px 12px;
+    background-color: white;
+    color: rgb(120, 120, 120);
+}
+
+.list_content li:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.check_box {
+    box-sizing: border-box;
+    height: 52px;
+    width: 52px;
+    border: 1px solid rgba(36, 186, 160, .5);
+    border-radius: 1px;
+    padding-top: 7px;
+    display: inline-block;
+    margin-right: 20px;
+    background-color: white;
+    cursor:pointer;
+}
+
+.check_box img {
+    display: none;
+}
+
+.transport_label {
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px 0;
+    font-size: 30px;
+    color: rgb(147, 147, 147);
+}
+
+.section_wrapper {
+    width: 320px;
+}
+
+.section_wrapper img {
+    width: 100%;
+}
+
+
+/*order panel*/
+
+.left_panel, .right_panel, .sum_label, .sum {
+    box-sizing: border-box;
+    background-color: white;
+    padding: 15px;
+}
+
+.left_panel {
+    width: 200px;
+    height: 160px;
+    color: rgb(36, 186, 160);
+    font-size: 20px;
+    border-right: 1px solid rgb(241, 241, 241);
+    border-bottom: 1px solid rgb(241, 241, 241);
+    display: inline-block;
+    float: left;
+}
+
+.sum_label, .left_panel p:not(.chair_name) {
+    color: rgb(147, 147, 147);
+}
+
+.left_panel p, .right_panel p {
+    margin-bottom: 16px;
+}
+
+.right_panel {
+    width: 120px;
+    height: 159px;
+    float: left;
+    font-size: 20px;
+    color: rgb(36, 186, 160);
+    border-bottom: 1px solid rgb(241, 241, 241);
+    text-align: right;
+}
+
+.order {
+    border-radius: 3px;
+}
+
+.sum_label {
+    clear: both;
+    width: 200px;
+    box-sizing: border-box;
+    font-size: 22px;
+    display: inline-block;
+}
+
+.sum {
+    width: 120px;
+    display: inline-block;
+    float: right;
+    font-size: 22px;
+    color: rgb(36, 186, 160);
+    text-align: right;
+}
+
+.send_order {
+    clear: both;
+    width: 280px;
+    height: 50px;
+    color: white;
+    background-color: rgb(36, 186, 160);
+    border-radius: 8px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-color: rgb(36, 186, 160);
+    margin-top: 33px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
 
 /*section 4, contact*/
 
@@ -574,6 +769,7 @@ textarea {
 
 .red_chair_wrapper>img {
     margin-left: 40px;
+    width: 90%;
 }
 
 .red_chair_wrapper div:first-of-type {
@@ -585,6 +781,7 @@ textarea {
     padding-top: 7px;
     float: left;
     margin-right: 15px;
+    cursor: pointer;
 }
 
 .red_chair_wrapper p:first-of-type {
