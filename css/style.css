@@ -71,6 +71,14 @@ h1 {
     height: 40px;
 }
 
+#menulist li:hover {
+    color: rgb(36, 186, 160);
+}
+
+#menulist li:first-child span:hover {
+    color: rgb(36, 186, 160);
+}
+
 #menulist li:first-child {
     position: relative;
     display: inline-block;
@@ -339,7 +347,7 @@ span {
 
 /*hide img content*/
 
-.img_wrapper:hover .hide {
+.img_wrapper:hover .hide_img {
     display: none;
 }
 
@@ -596,7 +604,6 @@ sup {
     left: -1px;
     z-index: 10;
     cursor: pointer;
-    display: none;
 }
 
 .list_content li {
@@ -619,10 +626,10 @@ sup {
     display: inline-block;
     margin-right: 20px;
     background-color: white;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.check_box img {
+.hide {
     display: none;
 }
 
@@ -684,6 +691,10 @@ sup {
     border-radius: 3px;
 }
 
+.order p {
+    height: 20px;
+}
+
 .sum_label {
     clear: both;
     width: 200px;
@@ -693,7 +704,9 @@ sup {
 }
 
 .sum {
+    box-sizing: border-box;
     width: 120px;
+    height: 52px;
     display: inline-block;
     float: right;
     font-size: 22px;

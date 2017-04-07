@@ -62,20 +62,20 @@
                 <div>
                     <img src="images/box1_img.jpg" alt="Chair CLAIR" title="Chair CLAIR" class="chairs_images" />
                 </div>
-                <div id="clair_div" class="hide">
+                <div id="clair_div" class="hide_img">
                     <p>Chair CLAIR</p>
                 </div>
-                <div id="div_green_1" class="greenDiV hide"></div>
+                <div id="div_green_1" class="greenDiV hide_img"></div>
             </div>
 
             <div class="img_wrapper">
                 <div>
                     <img src="images/box2_img.jpg" alt="Chair MARGARITA" title="Chair MARGARITA" class="chairs_images" />
                 </div>
-                <div id="margarita_div" class="hide">
+                <div id="margarita_div" class="hide_img">
                     <p>Chair MARGARITA</p>
                 </div>
-                <div id="div_green_2" class="greenDiV hide"></div>
+                <div id="div_green_2" class="greenDiV hide_img"></div>
             </div>
 
             <div id="finds_all_inputs">
@@ -174,7 +174,7 @@
                    <div class="dropdown_list">
                        <span class="list_label regularFont">Wybierz rodzaj</span>
                         <span class="list_arrow"></span>
-                        <ul class="list_content">
+                        <ul class="list_content hide">
                             <li data-name-price="120">
                                 Clair
                             </li>
@@ -192,7 +192,7 @@
                 <div class="dropdown_list">
                     <span class="list_label regularFont">Wybierz kolor</span>
                     <span class="list_arrow"></span>
-                    <ul class="list_content">
+                    <ul class="list_content hide">
                         <li data-color-price="200">
                             Czerwony
                         </li>
@@ -210,7 +210,7 @@
                 <div class="dropdown_list">
                     <span class="list_label regularFont">Wybierz materiał</span>
                     <span class="list_arrow"></span>
-                    <ul class="list_content">
+                    <ul class="list_content hide">
                         <li data-material-price="330">
                             Tkanina
                         </li>
@@ -220,8 +220,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="check_box"><img src="images/form_ok.jpg" /></div>
-            <div class="transport_label">
+            <div class="check_box"><img src="images/form_ok.jpg" class="hide" /></div>
+            <div class="transport_label" data-transport-price="200">
                 Transport
             </div>
         </div>
@@ -236,16 +236,16 @@
                 <p class="chair_name boldFont">
                     Twój fotel
                 </p>
-                <p class="chair_color">czerwony</p>
-                <p class="chair_material">tkanina</p>
-                <p class="chair_transport">transport</p>
+                <p class="chair_color"></p>
+                <p class="chair_material"></p>
+                <p class="chair_transport"></p>
             </div>
 
             <div class="right_panel">
-                <p class="chair_name_value boldFont">220</p>
-                <p class="chair_color_value">90</p>
-                <p class="chair_material_value">120</p>
-                <p class="chair_transport_value">200</p>
+                <p class="chair_name_value boldFont"></p>
+                <p class="chair_color_value"></p>
+                <p class="chair_material_value"></p>
+                <p class="chair_transport_value"></p>
             </div>
 
             <div class="sum_label">
@@ -255,8 +255,8 @@
             </div>
 
             <div class="sum boldFont">
-                <p>
-                    630
+                <p class="sum-count">
+
                 </p>
             </div>
             <input class="send_order" type="submit" value="ZAMAWIAM" />
@@ -282,7 +282,7 @@
                 <div class="red_chair_wrapper">
                     <img src="images/red_chair.png" />
 
-                    <div><img src="images/form_ok.jpg" /></div>
+                    <div class="form_check"><img src="images/form_ok.jpg" class="hide" /></div>
                     <p>Zgadzam się na przetwarzanie danych osobowych</p>
                     <div class="clearfix"></div>
                     <input class="button_3 boldFont" type="submit" name="button_3" value="WYŚLIJ">
