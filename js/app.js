@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     slider();
 
-//calculator for section make your own chair
+    //calculator for section make your own chair
     function order() {
         var arrow = document.querySelectorAll(".list_arrow");
         var listContent = document.querySelectorAll(".list_content");
@@ -105,19 +105,63 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         function sum() {
-            var total = Number(chairNameValue.textContent.substr(0,4)) + Number(chairColorValue.textContent.substr(0,4)) + Number(chairMaterialValue.textContent.substr(0,4)) + Number(transportValue.textContent.substr(0,4));
+            var total = Number(chairNameValue.textContent.substr(0, 4)) + Number(chairColorValue.textContent.substr(0, 4)) + Number(chairMaterialValue.textContent.substr(0, 4)) + Number(transportValue.textContent.substr(0, 4));
             showSum.textContent = total + " zł";
         }
     }
     order();
 
 
-//form validation
+    //form validation
 
     function formValidation() {
         var check = document.querySelector(".form_check");
+        var msgPlace = document.querySelector(".red_chair_wrapper");
+
         check.addEventListener("click", function() {
             this.firstChild.classList.toggle("hide");
+        });
+
+        var form = document.querySelector("form");
+        var name = document.querySelector(".input_name");
+        var email = document.querySelector(".input_email");
+        var msg = document.querySelector(".input_message");
+        var errorMsg = document.createElement("div");
+        errorMsg.style.color = "red";
+
+        form.addEventListener("submit", function(event) {
+
+            var nameValue = name.value;
+            var emailValue = email.value;
+            var msgValue = msg.value;
+            var validEmail = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(emailValue);
+
+            errorMsg.textContent = "";
+
+            if (nameValue.length <= 5) {
+                form.insertBefore(errorMsg, email);
+                errorMsg.textContent = "*Twoje imię musi zawierać minimum 5 znaków!";
+                event.preventDefault();
+                return;
+            }
+            if (!emailValue) {
+                form.insertBefore(errorMsg, msg);
+                errorMsg.textContent = "*Twój email jest nieprawidłowy!";
+                event.preventDefault();
+                return;
+            }
+            if (msgValue.length < 10) {
+                form.appendChild(errorMsg);
+                errorMsg.textContent = "*Twoja wiadomość musi zawierać minimum 10 znaków!";
+                event.preventDefault();
+                return;
+            }
+            if (check.firstChild.classList == "hide") {
+                msgPlace.appendChild(errorMsg);
+                errorMsg.textContent = "*Musisz wyrazić zgodę na przetwarzanie danych osobowych!";
+                event.preventDefault();
+                return;
+            }
         });
     }
     formValidation();
